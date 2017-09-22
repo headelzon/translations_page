@@ -1,0 +1,44 @@
+/* Scss Document */
+/* Scss Document */
+html, body {
+  margin: 0;
+  padding: 0; }
+
+.navbar {
+  padding: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 100; }
+  .navbar a {
+    color: white; }
+  .navbar li {
+    margin-left: 1.5rem; }
+    .navbar li.active {
+      border-bottom: 2px solid #fff; }
+  .navbar .dropdown-toggle::after {
+    display: none; }
+  .navbar .contact-link {
+    width: 214px;
+    height: 45px;
+    border: 2px solid #fff;
+    border-radius: 0.25rem;
+    transition: box-shadow 0.2s ease-in-out;
+    text-align: center; }
+    .navbar .contact-link:hover {
+      box-shadow: 0 13px 24px rgba(0, 0, 0, 0.15); }
+    .navbar .contact-link .icon {
+      margin-right: 20px; }
+
+.intro {
+  background: linear-gradient(to top, #00fff0 0%, #0062c6 100%);
+  height: 100vh;
+  width: 100%;
+  position: relative; }
+
+.bottom-landmark {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 808px;
+  height: 403px;
+  margin-left: -404px;
+  /* Negative half of width. */ }
