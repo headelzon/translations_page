@@ -1,0 +1,23 @@
+/* Scss Document */
+
+.footer {
+	height: 10rem;
+	background-color: #222222;
+	padding: 1.5rem;
+	color: white;
+	font-size: 0.8rem;
+	font-weight: 300;
+	text-align: center;
+	
+	.footer-contact {
+		> span {
+			margin-right: 1rem;
+		}
+	}
+	
+	img.logo {
+		width: 120px;
+		height: 45px;
+		margin: 1rem;
+	}
+}

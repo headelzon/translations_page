@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 
 <head>
 <meta charset="UTF-8">
@@ -7,8 +7,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>KOZIAK - Tłumacz Przysięgły</title>
 
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Roboto:100,300,400,500,700" rel="stylesheet">
+
 <!-- Bootstrap -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">-->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<!--<link rel="stylesheet" href="css/jquery.fullPage.css">-->
 <link href="css/main.css" rel="stylesheet" type="text/css">
 
 
@@ -19,45 +23,149 @@
 </head>
 
 <body>
-    <section class="container intro">
-    	<nav class="navbar navbar-toggleable-md fixed-top">
-		  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		  </button>
-		  <a class="navbar-brand" href="#">
-			<img src="assets/logo.png" width="120" height="45" alt="logo">
-		  </a>
+	<nav class="navbar navbar-toggleable-md fixed-top">
+	  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	  </button>
+	  <a class="navbar-brand" href="#">
+		<img src="assets/logo.png" width="120" height="45" alt="logo">
+	  </a>
 
-		  <div class="collapse navbar-collapse" id="navbarDefault">
-			<ul class="navbar-nav ml-auto">
-			  <li class="nav-item active">
-				<a class="nav-link" href="#">Tłumaczenia <span class="sr-only">(current)</span></a>
-			  </li>
-			  <li class="nav-item">
-				<a class="nav-link" href="#">Podatki i zasiłki</a>
-			  </li>
-			  <li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Cennik</a>
-				<div class="dropdown-menu" aria-labelledby="dropdown01">
-				  <a class="dropdown-item" href="#">Tłumaczenia</a>
-				  <a class="dropdown-item" href="#">Podatki i zasiłki</a>
-				</div>
-			  </li>
-			  <li class="nav-item">
-				<a class="nav-link" href="#">Kontakt</a>
-			  </li>
-			  <li class="nav-item">
-				<a class="nav-link contact-link" href="#"><img src="assets/phone-icon.png" class="icon">509 503 269</a>
-			  </li>
-			</ul>
-		  </div>
-		</nav>
+	  <div class="collapse navbar-collapse" id="navbarDefault">
+		<ul class="navbar-nav ml-auto">
+		  <li class="nav-item active">
+			<a class="nav-link" href="#">Tłumaczenia <span class="sr-only">(current)</span></a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="#">Podatki i zasiłki</a>
+		  </li>
+		  <li class="nav-item dropdown">
+			<a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Cennik</a>
+			<div class="dropdown-menu" aria-labelledby="dropdown01">
+			  <a class="dropdown-item" href="#">Tłumaczenia</a>
+			  <a class="dropdown-item" href="#">Podatki i zasiłki</a>
+			</div>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="#">Kontakt</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link contact-link" href="#">
+<!--				<img src="assets/phone-icon.png" class="icon">-->
+				509 503 269
+			</a>
+		  </li>
+		</ul>
+	  </div>
+	</nav>
+	
+	<div id="fullpage">
+	<div class="container section active intro">
+   		<div class="col-md-6 offset-md-3 title">
+   			<h1>Tłumacz przysięgły języka niemieckiego</h1>
+   			<h5>Najwyższa jakość przy najniższych cenach.</h5>
+   			<span class="info">
+   				<button class="btn btn-default">Tłumaczenia</button>
+   			</span>
+   			<span class="info">
+   				<button class="btn btn-default">Podatki i zasiłki</button>
+   			</span>
+   		</div>
+   		
+   		<img src="assets/wave-1.svg" class="wave">
+   		<img src="assets/wave-2.svg" class="wave">
+   		<img src="assets/brandenburg-gate.png" class="landmark">
+   	
+    </div>
+    
+    
+    <div class="container section translations-categories">
+    
+    	<div class="col-md-6 offset-md-3 title">
+   			<h1>Tłumaczenia przysięgłe</h1>
+   			<h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed deiusmod tempor incididunt ut labore et dolore magna aliqua.</h5>
+   		</div>
+   		
+		<div class="tile" style="margin-left: 6%;">
+			<div class="tile-header samochodowe">
+
+			</div>
+			<div class="tile-body">
+				<h1>Samochodowe</h1>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+			</div>
+		</div>
+
+		<div class="tile">
+			<div class="tile-header medyczne">
+
+			</div>
+			<div class="tile-body">
+				<h1>Medyczne</h1>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+			</div>
+		</div>
+
+		<div class="tile">
+			<div class="tile-header techniczne">
+
+			</div>
+			<div class="tile-body">
+				<h1>Techniczne</h1>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+			</div>
+		</div>
+
+		<div class="tile">
+			<div class="tile-header prawnicze">
+
+			</div>
+			<div class="tile-body">
+				<h1>Prawnicze</h1>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+			</div>
+		</div>
+
+		<div class="tile">
+			<div class="tile-header prywatne">
+
+			</div>
+			<div class="tile-body">
+				<h1>Prywatne</h1>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+			</div>
+		</div>
+    
+    	<img src="assets/trans-categories-back.png" class="landmark">
+    </div>
+	 
+    <div class="footer section fp-auto-height">
+    	<div class="container">
+    		<div class="footer-contact">
+				<span><span class="icon">ICON</span> +48 509 503 269</span>
+   				<span><span class="icon">ICON</span> biuro@koziak.pl</span>
+   				<span><span class="icon">ICON</span> ul. Podgórze 12/4, Nowy Sącz, NIP 123456789</span>
+    		</div>
+    		<img src="assets/logo.png" class="logo" alt="logo">
+    		<div class="footer-copyright">
+    			&copy; 2017 KOZIAK All rights reserved.
+    		</div>
+    	</div>
+    </div>
+
    
-   		<img class="bottom-landmark" src="assets/brandenburg-gate.png">
-    </section>
-
+   	</div>
+<!--
 <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+-->
+
+<script src="js/jquery-3.2.1.slim.min.js"></script>
+<script src="js/tether.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!--<script src="js/jquery.fullPage.min.js"></script>-->
+<script src="js/main.js"></script>
+
 </body>
 </html>

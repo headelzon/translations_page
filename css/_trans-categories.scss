@@ -1,0 +1,90 @@
+/* Scss Document */
+
+.translations-categories {
+	height: 100vh;
+	width: 100%;
+	padding-top: 67px;
+	position: relative;
+	
+	img.landmark {
+		position: absolute;
+		width: 60%;
+		bottom: 0;
+		margin-left: auto;
+		margin-right: auto;
+		left: 0;
+		right: 0;
+	}
+	
+	.title {
+		color: #000;
+		margin-top: 7vh;
+		text-align: center;
+		padding: 0 4%;
+		
+		h1 {
+			font-size: 2rem;
+			font-weight: 500;
+			letter-spacing: 6px;
+		}
+		
+		h5 {
+			font-size: 1rem;
+			font-weight: 100;
+			margin-top: 19px;
+		}
+	}
+	
+	.categories {
+		margin: 0 auto;
+	}
+	
+	.tile {
+		float: left;
+		width: 16%;
+		height: 30%;
+		box-shadow: 0 30px 100px rgba(0, 0, 0, 0.1);
+		border-radius: 10px;
+		margin-right: 2%;
+		margin-top: 1rem;
+		
+		.tile-header {
+			height: 30%;
+			border-top-left-radius: 10px;
+			border-top-right-radius: 10px;
+			
+			&.samochodowe {
+				background-color: #02ccba;
+			}
+			
+			&.medyczne {
+				background-color: #ff5483;
+			}
+			
+			&.techniczne {
+				background-color: #a951ed;
+			}
+			
+			&.prawnicze {
+				background-color: #02b3e4;
+			}
+			
+			&.prywatne {
+				background-color: #ffa234;
+			}
+		}
+		
+		.tile-body {
+			text-align: center;
+			padding: 5%;
+			font-size: 0.9rem;
+			font-weight: 300;
+			
+			h1 {
+				font-size: 1rem;
+				font-weight: 500;
+			}
+		}
+	}
+	
+}
