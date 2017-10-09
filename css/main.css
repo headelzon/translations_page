@@ -42,7 +42,8 @@
       .intro .title .btn:hover {
         -webkit-box-shadow: 0px 13px 19px -7px rgba(0, 0, 0, 0.15);
         -moz-box-shadow: 0px 13px 19px -7px rgba(0, 0, 0, 0.15);
-        box-shadow: 0px 13px 19px -7px rgba(0, 0, 0, 0.15); }
+        box-shadow: 0px 13px 19px -7px rgba(0, 0, 0, 0.15);
+        color: #0084A0; }
       .intro .title .btn:active {
         -webkit-box-shadow: 0px 13px 19px -12px rgba(0, 0, 0, 0.15);
         -moz-box-shadow: 0px 13px 19px -12px rgba(0, 0, 0, 0.15);
@@ -75,11 +76,16 @@
     margin-right: auto;
     left: 0;
     right: 0; }
+  .translations-categories img.wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw; }
   .translations-categories .title {
     color: #000;
-    margin-top: 7vh;
+    margin-top: 1vh;
     text-align: center;
-    padding: 0 4%; }
+    padding: 0 3%; }
     .translations-categories .title h1 {
       font-size: 2rem;
       font-weight: 500;
@@ -91,17 +97,16 @@
   .translations-categories .categories {
     margin: 0 auto; }
   .translations-categories .tile {
-    float: left;
-    width: 16%;
-    height: 30%;
+    height: 11rem;
     box-shadow: 0 30px 100px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    margin-right: 2%;
     margin-top: 1rem; }
     .translations-categories .tile .tile-header {
-      height: 40%;
+      width: 100%;
+      height: 35%;
       border-top-left-radius: 10px;
-      border-top-right-radius: 10px; }
+      border-top-right-radius: 10px;
+      position: relative; }
       .translations-categories .tile .tile-header.samochodowe {
         background-color: #02ccba; }
       .translations-categories .tile .tile-header.medyczne {
@@ -120,6 +125,14 @@
       .translations-categories .tile .tile-body h1 {
         font-size: 1rem;
         font-weight: 500; }
+    .translations-categories .tile .icon {
+      width: 20%;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      margin: auto;
+      margin-left: -10%; }
 
 /* Scss Document */
 .footer {
@@ -127,15 +140,18 @@
   background-color: #222222;
   padding: 1.5rem;
   color: white;
-  font-size: 0.8rem;
+  font-size: 14px;
   font-weight: 300;
   text-align: center; }
   .footer .footer-contact > span {
-    margin-right: 1rem; }
+    margin-right: 2rem; }
   .footer .logo {
     width: 120px;
     height: 45px;
     margin: 1rem; }
+  .footer .icon {
+    height: 14px;
+    margin-right: 0.4rem; }
 
 html, body {
   margin: 0;
@@ -174,8 +190,11 @@ html, body {
   .navbar .dropdown-item {
     color: black; }
   .navbar .contact-link {
+    font-size: 15px !important;
     cursor: default;
-    margin-left: 1.6rem; }
+    margin-left: 1.6rem;
+    position: relative;
+    top: -2px; }
 
 .vertical-line {
   width: 2px;
