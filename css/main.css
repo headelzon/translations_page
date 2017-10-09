@@ -99,7 +99,7 @@
     margin-right: 2%;
     margin-top: 1rem; }
     .translations-categories .tile .tile-header {
-      height: 30%;
+      height: 40%;
       border-top-left-radius: 10px;
       border-top-right-radius: 10px; }
       .translations-categories .tile .tile-header.samochodowe {
@@ -114,7 +114,7 @@
         background-color: #ffa234; }
     .translations-categories .tile .tile-body {
       text-align: center;
-      padding: 5%;
+      padding: 7% 5%;
       font-size: 0.9rem;
       font-weight: 300; }
       .translations-categories .tile .tile-body h1 {
@@ -132,7 +132,7 @@
   text-align: center; }
   .footer .footer-contact > span {
     margin-right: 1rem; }
-  .footer img.logo {
+  .footer .logo {
     width: 120px;
     height: 45px;
     margin: 1rem; }
@@ -143,45 +143,43 @@ html, body {
   font-family: 'Roboto', 'Open Sans', sans-serif; }
 
 .navbar {
-  padding: 10px 20px 10px;
-  font-weight: 300;
-  background-color: rgba(0, 0, 0, 0.3); }
+  padding: 10px 20px 0;
+  font-weight: 300; }
+  .navbar.inverted {
+    background-color: white; }
+    .navbar.inverted a {
+      color: black; }
+    .navbar.inverted .vertical-line {
+      background-color: #000; }
   .navbar .navbar-brand {
     width: 120px; }
   @media only screen and (max-width: 992px) {
     .navbar .navbar-collapse {
       background-color: white; } }
   .navbar li {
-    margin-left: 1.5rem; }
-    .navbar li.active {
-      border-bottom: 2px solid #fff; }
+    margin-left: 1.4rem;
+    height: 45px; }
   .navbar a {
     color: white;
-    font-size: 0.88rem;
-    height: 45px;
-    vertical-align: middle;
-    line-height: 2;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    -webkit-touch-callout: none;
-    -khtml-user-select: none;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    -webkit-transition: color 0.3s;
-    transition: color 0.3s; }
-    .navbar a.navbar-brand {
+    font-size: 14px; }
+    .navbar a:hover, .navbar a :active, .navbar a :focus {
+      outline: none; }
+    .navbar a .phone {
+      height: 16px;
+      margin-right: 0.8rem;
       position: relative;
-      top: -5px; }
+      top: 2px; }
+  .navbar object path {
+    fill: #000; }
   .navbar .dropdown-item {
     color: black; }
   .navbar .contact-link {
-    padding-left: 2rem !important;
-    padding-right: 2rem !important;
-    height: 45px;
-    border: 2px solid #fff;
-    border-radius: 0.25rem;
-    text-align: center;
-    cursor: default; }
-    .navbar .contact-link .icon {
-      margin-right: 20px; }
+    cursor: default;
+    margin-left: 1.6rem; }
+
+.vertical-line {
+  width: 2px;
+  margin-top: 4px;
+  height: 28px !important;
+  background-color: #fff;
+  margin-left: 3rem !important; }

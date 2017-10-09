@@ -10,7 +10,7 @@
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Roboto:100,300,400,500,700" rel="stylesheet">
 
 <!-- Bootstrap -->
-<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <!--<link rel="stylesheet" href="css/jquery.fullPage.css">-->
 <link href="css/main.css" rel="stylesheet" type="text/css">
@@ -27,8 +27,11 @@
 	  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
 		<span class="navbar-toggler-icon"></span>
 	  </button>
+	  
 	  <a class="navbar-brand" href="#">
-		<img src="assets/logo.png" width="120" height="45" alt="logo">
+		<object type="image/svg+xml" data="./assets/white-logo.svg" class="logo">
+			KOZIAK
+		</object>
 	  </a>
 
 	  <div class="collapse navbar-collapse" id="navbarDefault">
@@ -49,9 +52,10 @@
 		  <li class="nav-item">
 			<a class="nav-link" href="#">Kontakt</a>
 		  </li>
+		  <li class="vertical-line"></li>
 		  <li class="nav-item">
 			<a class="nav-link contact-link" href="#">
-<!--				<img src="assets/phone-icon.png" class="icon">-->
+				<object type="image/svg+xml" data="./assets/white-phone.svg" class="phone"></object>
 				509 503 269
 			</a>
 		  </li>
@@ -62,10 +66,10 @@
 	<div id="fullpage">
 	<div class="container section active intro">
    		<div class="col-md-6 offset-md-3 title">
-   			<h1>Tłumacz przysięgły języka niemieckiego</h1>
+   			<h1>TŁUMACZ PRZYSIĘGŁY JĘZYKA NIEMIECKIEGO</h1>
    			<h5>Najwyższa jakość przy najniższych cenach.</h5>
    			<span class="info">
-   				<button class="btn btn-default">Tłumaczenia</button>
+   				<button class="btn btn-default" id="translations-button">Tłumaczenia</button>
    			</span>
    			<span class="info">
    				<button class="btn btn-default">Podatki i zasiłki</button>
@@ -88,7 +92,8 @@
    		
 		<div class="tile" style="margin-left: 6%;">
 			<div class="tile-header samochodowe">
-
+				<object type="image/svg+xml" data="./assets/samochodowe.svg" class="icon">
+				</object>
 			</div>
 			<div class="tile-body">
 				<h1>Samochodowe</h1>
@@ -98,7 +103,8 @@
 
 		<div class="tile">
 			<div class="tile-header medyczne">
-
+				<object type="image/svg+xml" data="./assets/medyczne.svg" class="icon">
+				</object>
 			</div>
 			<div class="tile-body">
 				<h1>Medyczne</h1>
@@ -108,7 +114,8 @@
 
 		<div class="tile">
 			<div class="tile-header techniczne">
-
+				<object type="image/svg+xml" data="./assets/techniczne.svg" class="icon">
+				</object>
 			</div>
 			<div class="tile-body">
 				<h1>Techniczne</h1>
@@ -118,7 +125,8 @@
 
 		<div class="tile">
 			<div class="tile-header prawnicze">
-
+				<object type="image/svg+xml" data="./assets/prawnicze.svg" class="icon">
+				</object>
 			</div>
 			<div class="tile-body">
 				<h1>Prawnicze</h1>
@@ -128,7 +136,8 @@
 
 		<div class="tile">
 			<div class="tile-header prywatne">
-
+				<object type="image/svg+xml" data="./assets/prywatne.svg" class="icon">
+				</object>
 			</div>
 			<div class="tile-body">
 				<h1>Prywatne</h1>
@@ -146,7 +155,11 @@
    				<span><span class="icon">ICON</span> biuro@koziak.pl</span>
    				<span><span class="icon">ICON</span> ul. Podgórze 12/4, Nowy Sącz, NIP 123456789</span>
     		</div>
-    		<img src="assets/logo.png" class="logo" alt="logo">
+    		
+			<object type="image/svg+xml" data="./assets/white-logo.svg" class="logo">
+				KOZIAK
+			</object>
+    		
     		<div class="footer-copyright">
     			&copy; 2017 KOZIAK All rights reserved.
     		</div>
@@ -155,15 +168,15 @@
 
    
    	</div>
-<!--
-<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script   src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
--->
 
+<!--
 <script src="js/jquery-3.2.1.slim.min.js"></script>
 <script src="js/tether.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+-->
 <!--<script src="js/jquery.fullPage.min.js"></script>-->
 <script src="js/main.js"></script>
 

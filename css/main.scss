@@ -11,9 +11,19 @@ html, body {
 }
 
 .navbar {
-	padding: 10px 20px 10px;
+	padding: 10px 20px 0;
 	font-weight: 300;
-	background-color: rgba(0,0,0,0.3);
+	
+	&.inverted {
+		background-color: rgba(255, 255, 255, 1);
+		a {
+			color: rgba(0, 0, 0, 1);
+		}
+		
+		.vertical-line {
+			background-color: #000;
+		}
+	}
 	
 	.navbar-brand {
 		width: 120px;
@@ -26,34 +36,33 @@ html, body {
 	}
 	
 	li {
-		margin-left: 1.5rem;
-		
-		&.active {
-			border-bottom: 2px solid #fff;
-		}
+		margin-left: 1.4rem;
+		height: 45px;
 	}
 	
 	a {
 		color: white;
-		font-size: 0.88rem;
-		height: 45px;
-		vertical-align: middle;
-		line-height: 2;
-		-webkit-user-select: none;
-		-moz-user-select: none;
-		-ms-user-select: none;
-		user-select: none;
-		-webkit-touch-callout: none;
-		-khtml-user-select: none;
-		-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+		font-size: 14px;
 		
-		-webkit-transition: color 0.3s;
-		transition: color 0.3s;
+//		&.navbar-brand {
+//			position: relative;
+//			top: -5px;
+//		}
 		
-		&.navbar-brand {
-			position: relative;
-			top: -5px;
+		&:hover, :active, :focus {
+			outline: none;
 		}
+		
+		.phone {
+			height: 16px;
+			margin-right: 0.8rem;
+			position: relative;
+			top: 2px;
+		}
+	}
+	
+	object path {
+		fill: #000;
 	}
 	
 	.dropdown-item {
@@ -61,16 +70,16 @@ html, body {
 	}
 	
 	.contact-link {
-		padding-left: 2rem !important;
-		padding-right: 2rem !important;
-		height: 45px;
-		border: 2px solid #fff;
-		border-radius: 0.25rem;
-		text-align: center;
+		font-size: 16px !important;
 		cursor: default;
-		
-		.icon {
-			margin-right: 20px;
-		}
+		margin-left: 1.6rem;
 	}
+}
+
+.vertical-line {
+	width: 2px;
+	margin-top: 4px;
+	height: 28px !important;
+	background-color: #fff;
+	margin-left: 3rem !important;
 }
