@@ -1,12 +1,15 @@
 /* Scss Document */
 @import 'intro';
 @import 'trans-categories';
+@import 'pricing';
+@import 'popup';
 @import 'footer';
 
 
 html, body {
 	margin: 0;
 	padding: 0;
+	font-size: 14px;
 	font-family: 'Roboto', 'Open Sans', sans-serif;
 }
 

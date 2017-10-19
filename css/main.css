@@ -17,7 +17,7 @@
       color: #fff;
       letter-spacing: 6px; }
     .intro .title h5 {
-      font-size: 1rem;
+      font-size: 1.3rem;
       font-weight: 100;
       margin-top: 19px; }
     .intro .title .btn {
@@ -83,7 +83,7 @@
     width: 100vw; }
   .translations-categories .title {
     color: #000;
-    margin-top: 1vh;
+    margin-top: 2vh;
     text-align: center;
     padding: 0 3%; }
     .translations-categories .title h1 {
@@ -135,8 +135,87 @@
       margin-left: -10%; }
 
 /* Scss Document */
+.pricing {
+  height: 100vh;
+  background-image: linear-gradient(-55deg, #0072ff 0%, #00c6ff 100%);
+  width: 100%;
+  padding-top: 67px;
+  position: relative; }
+  .pricing .title {
+    color: #fff;
+    margin-top: 2vh;
+    margin-bottom: 4vh;
+    text-align: center;
+    padding: 0 4%; }
+    .pricing .title h1 {
+      font-size: 2rem;
+      font-weight: 500;
+      color: #fff;
+      letter-spacing: 6px; }
+  .pricing .tile {
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    border: 1px solid #ffffff;
+    background-color: rgba(255, 255, 255, 0.2);
+    min-height: 10vh; }
+    .pricing .tile .tile-header {
+      border-radius: 8px 8px 0 0;
+      background-color: white;
+      border: 1px solid #ffffff;
+      min-height: 5vh;
+      color: #00b3ff;
+      text-align: center;
+      padding: 5% 5% 2%; }
+    .pricing .tile .tile-content {
+      padding: 5%;
+      color: white; }
+      .pricing .tile .tile-content .subsection {
+        padding: 3% 0; }
+      .pricing .tile .tile-content h4 {
+        margin-bottom: 0; }
+      .pricing .tile .tile-content hr {
+        width: calc(110% + 4px);
+        border-top: 1px solid white;
+        margin: 0 calc(-5% + -2px);
+        border-bottom: none; }
+  .pricing > p {
+    position: relative;
+    margin-top: 3%;
+    color: rgba(255, 255, 255, 0.75);
+    z-index: 900;
+    font-size: 11px;
+    font-weight: 300; }
+
+/* Scss Document */
+.popup {
+  position: absolute;
+  bottom: 15%;
+  right: 0;
+  box-shadow: 0 13px 24px rgba(0, 0, 0, 0.15);
+  border-radius: 10px 0 0 10px;
+  height: 80px;
+  width: 250px;
+  padding: 27px;
+  background-image: -webkit-linear-gradient(325deg, #d4145a 0%, #fbb03b 100%);
+  background-image: -o-linear-gradient(325deg, #d4145a 0%, #fbb03b 100%);
+  background-image: linear-gradient(55deg, #d4145a 0%, #fbb03b 100%);
+  cursor: pointer;
+  transition: box-shadow 0.3s ease-in-out; }
+  .popup:hover {
+    -webkit-box-shadow: 0px 13px 19px -7px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 13px 19px -7px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 13px 19px -7px rgba(0, 0, 0, 0.15); }
+  .popup span {
+    line-height: 26px;
+    vertical-align: middle;
+    position: relative;
+    top: -8px;
+    margin-left: 10px;
+    color: white; }
+
+/* Scss Document */
 .footer {
-  height: 10rem;
+  min-height: 10rem;
   background-color: #222222;
   padding: 1.5rem;
   color: white;
@@ -156,6 +235,7 @@
 html, body {
   margin: 0;
   padding: 0;
+  font-size: 14px;
   font-family: 'Roboto', 'Open Sans', sans-serif; }
 
 .navbar {
