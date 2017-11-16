@@ -47,16 +47,11 @@ html, body {
 		color: white;
 		font-size: 14px;
 		
-//		&.navbar-brand {
-//			position: relative;
-//			top: -5px;
-//		}
-		
 		&:hover, :active, :focus {
 			outline: none;
 		}
 		
-		.phone {
+		.phone-nav {
 			height: 16px;
 			margin-right: 0.8rem;
 			position: relative;
@@ -75,7 +70,6 @@ html, body {
 	.contact-link {
 		font-size: 15px !important;
 		cursor: default;
-		margin-left: 1.6rem;
 		position: relative;
 		top: -2px;
 	}

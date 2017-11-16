@@ -15,7 +15,7 @@
       font-size: 2rem;
       font-weight: 500;
       color: #fff;
-      letter-spacing: 6px; }
+      letter-spacing: 3px; }
     .intro .title h5 {
       font-size: 1.3rem;
       font-weight: 100;
@@ -260,7 +260,7 @@ html, body {
     font-size: 14px; }
     .navbar a:hover, .navbar a :active, .navbar a :focus {
       outline: none; }
-    .navbar a .phone {
+    .navbar a .phone-nav {
       height: 16px;
       margin-right: 0.8rem;
       position: relative;
@@ -272,7 +272,6 @@ html, body {
   .navbar .contact-link {
     font-size: 15px !important;
     cursor: default;
-    margin-left: 1.6rem;
     position: relative;
     top: -2px; }
 
